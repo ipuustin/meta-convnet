@@ -7,12 +7,12 @@ PRIORITY= "optional"
 SECTION = "libs"
 PR = "r0"
 
-DEPENDS = "make boost openblas protobuf glog gflags hdf5 opencv lmdb snappy leveldb python python-numpy"
+DEPENDS = "make boost openblas protobuf glog gflags hdf5 opencv lmdb snappy leveldb python python-numpy beignet viennacl ocl-icd"
 
 LIC_FILES_CHKSUM = "file://LICENSE;md5=89a82623447e1b9b66e59b1e3c8a97fc"
 
-SRCREV = "4ba654f5c88c36ee8ba53964b7faf25c6d7010b4"
-SRC_URI = "git://github.com/BVLC/caffe.git;branch=master		\
+SRCREV = "9abafdca7b91ff5cd6f29035fdc882c269409f27"
+SRC_URI = "git://github.com/BVLC/caffe.git;branch=opencl		\
            file://0001-Allow-setting-numpy-include-dir-from-outside.patch \
 			"
 S = "${WORKDIR}/git"
